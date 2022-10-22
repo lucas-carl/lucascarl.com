@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Montserrat Alternates Regular";
+  src: url("/assets/fonts/Montserrat-Alternates-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vollkorn Bold";
+  src: url("/assets/fonts/Vollkorn-Bold.ttf");
+  font-weight: 800;
+  font-style: bold;
+  font-display: swap;
+}
