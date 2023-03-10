@@ -1,47 +1,42 @@
-import { Navigation } from "components/Layout/Navigation";
-import { ExternalLinkProps, StringProps } from "lib/types";
-import ScrollToTop from "components/Layout/ScrollToTop";
+import {ExternalLinkProps} from 'lib/types';
 
-import { Flex, StyledContainer } from "components/Layout/Container/styles";
+import {Flex, StyledContainer} from 'components/Layout/Container/styles';
 import {
-  FooterContainer,
-  GridContainer,
-  FlexLinks,
-  Address,
-} from "components/Layout/Footer/styles";
+    FooterContainer,
+    GridContainer,
+    FlexLinks,
+    Address,
+} from 'components/Layout/Footer/styles';
 
-const ExternalLink = ({ href, children }: ExternalLinkProps) => (
-  <a target="_blank" rel="noopener noreferrer" href={href}>
-    {children}
-  </a>
+const ExternalLink = ({href, children}: ExternalLinkProps) => (
+    <a target="_blank" rel="noopener noreferrer" href={href}>
+        {children}
+    </a>
 );
 
-export const Footer = ({ darkTheme }: StringProps) => {
-  return (
-    <FooterContainer darkTheme={darkTheme}>
-      <StyledContainer>
-        <Flex justify="center" direction="column">
-          <hr />
-
-          <GridContainer>
-            <FlexLinks>
-              <ExternalLink href="tel:04915778833521">
-                +49 157 7 8833521
-              </ExternalLink>
-              <ExternalLink href="mailto:aliciakippels96@gmail.com">
-                aliciakippels96@gmail.com
-              </ExternalLink>
-            </FlexLinks>
-            <div />
-            <FlexLinks>
-              <Address>
-                Kempenerstr. 52, 50733 Köln
-              </Address>
-            </FlexLinks>
-          </GridContainer>
-          <ScrollToTop darkTheme={darkTheme} />
-        </Flex>
-      </StyledContainer>
-    </FooterContainer>
-  );
+export const Footer = () => {
+    return (
+        <FooterContainer>
+            <StyledContainer>
+                <Flex justify="center" direction="column">
+                    <GridContainer>
+                        <FlexLinks>
+                            <ExternalLink href="tel:04922194224397">
+                                +49 221 94224397
+                            </ExternalLink>
+                            <ExternalLink href="mailto:hey@lucascarl.com">
+                                hey@lucascarl.com
+                            </ExternalLink>
+                        </FlexLinks>
+                        <div />
+                        <FlexLinks>
+                            <Address>
+                                Nonnenwerthstr. 8,<br />50937 Köln
+                            </Address>
+                        </FlexLinks>
+                    </GridContainer>
+                </Flex>
+            </StyledContainer>
+        </FooterContainer>
+    );
 };

@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export const ContentWrapper = styled.div<StringProps>`
   padding-right: 2rem;
+  margin-top: 2rem;
 
   h1,
   h2 {
@@ -22,20 +23,21 @@ export const ContentWrapper = styled.div<StringProps>`
   }
 
   @media ${devices.mobileL} {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 `;
 
-export const RoundImage = styled(Image)`
-  border-radius: 50%;
+export const HeroImage = styled(Image)`
+
 `;
 
 export const HeroFlex = styled(Flex)`
   margin-top: 2rem;
   margin-bottom: 4rem;
+  flex-direction: column-reverse;
 
   @media ${devices.mobileL} {
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
 `;
 

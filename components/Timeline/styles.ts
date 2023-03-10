@@ -1,10 +1,10 @@
-import { COLOR_MEDIUM_GRAY, COLOR_SPOTIFY_GREEN } from "lib/colorPalette";
+import { COLOR_MEDIUM_GRAY, COLOR_LIGHT_GRAY, ACCENT_PRIMARY, ACCENT_SECONDARY } from "lib/colorPalette";
 import { devices } from "lib/displayDevice";
 import styled from "styled-components";
 
 export const TimelineHeadline = styled.h3`
-  text-align: center;
-  padding-top: 1rem;
+  text-align: left;
+  margin-top: 0;
 `;
 
 export const StepLi = styled.li`
@@ -50,7 +50,7 @@ export const StepDate = styled.p`
   margin: 0;
   grid-area: date;
   line-height: 35px;
-  color: ${COLOR_SPOTIFY_GREEN};
+  color: ${COLOR_LIGHT_GRAY};
 
   ${props => props.dir === 'right' ? 'text-align: right;' : ''}
 `;
@@ -67,7 +67,7 @@ export const StepText = styled.p`
 `;
 
 export const TimelinePoint = styled.div`
-  background-color: ${COLOR_SPOTIFY_GREEN};
+  background-color: ${ACCENT_PRIMARY};
   grid-area: bar;
   border-radius: 50%;
   width: 1rem;
