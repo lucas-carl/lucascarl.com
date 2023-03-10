@@ -7,9 +7,9 @@ const breakPoints = {
 };
 
 export const devices = {
-  mobileL: `(max-width: ${breakPoints.mobileL})`,
-  tabletM: `(max-width: ${breakPoints.tabletM})`,
-  desktopM: `(max-width: ${breakPoints.desktopM})`,
-  tabletL: `(max-width: ${breakPoints.tabletL})`,
-  desktopL: `(max-width: ${breakPoints.desktopL})`,
+  mobileL: `(min-width: ${breakPoints.mobileL})`,
+  tabletM: `(min-width: ${breakPoints.tabletM})`,
+  desktopM: `(min-width: ${breakPoints.desktopM})`,
+  tabletL: `(min-width: ${breakPoints.tabletL})`,
+  desktopL: `(min-width: ${breakPoints.desktopL})`,
 };

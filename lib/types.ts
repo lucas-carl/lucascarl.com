@@ -15,7 +15,6 @@ export interface artistItemProps {
 }
 export interface WrapperProps {
   children?: React.ReactNode;
-  darkTheme?: boolean;
 }
 
 export interface ChildrenStringProps {
